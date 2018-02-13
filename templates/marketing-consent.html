@@ -1,0 +1,58 @@
+<fieldset name="marketing-consent" class="consent-form__fieldset">
+	<legend class="o-normalise-visually-hidden">Marketing consent</legend>
+	<div class="su-header">
+		<h2>Stay up to date</h2>
+	</div>
+	<div class="consent-form__intro-text">
+		Choose how you want us to contact you. Update these any time in your preferences.
+		<a class="su-link-external" href="https://help.ft.com/help/legal-privacy/privacy/" target="_blank">How we use
+			your data</a>
+	</div>
+	<div data-o-component="o-expander" data-o-expander-shrink-to="hidden" class="o-expander" data-o-expander-expanded-toggle-text="Tell me more" data-o-expander-collapsed-toggle-text="Tell me more">
+		<div class="consent-form__heading-3-group">
+			<h3 class="consent-form__heading-level-3 consent-form__no-margin-bottom">Top stories & features</h3>
+			<button type="button" class="consent-form__expander-toggle o-expander__toggle o--if-js"
+					data-trackable="stories-expander"></button>
+		</div>
+		<div class="o-expander__content consent-form__expander-content">
+			Get the most from The Financial Times with:
+			<ul>
+				<li>Special reports and exclusive articles</li>
+				<li>Handpicked stories and recommended reads</li>
+				<li>Essential FT announcements</li>
+				<li>The latest website features and app updates</li>
+			</ul>
+		</div>
+	</div>
+	<div class="consent-form__switches-group">
+		{{>n-marketing-consent/templates/yes-no-switch id="stories-email" label="By email"}}
+		{{>n-marketing-consent/templates/yes-no-switch id="stories-phone-call" label="By phone call"}}
+		{{>n-marketing-consent/templates/yes-no-switch id="stories-post" label="By post"}}
+	</div>
+	<div data-o-component="o-expander" data-o-expander-shrink-to="hidden" class="o-expander" data-o-expander-expanded-toggle-text="Tell me more" data-o-expander-collapsed-toggle-text="Tell me more">
+		<div class="consent-form__heading-3-group">
+			<h3 class="consent-form__heading-level-3">Invites & offers from the FT</h3>
+			<button type="button" class="consent-form__expander-toggle o-expander__toggle o--if-js"
+					data-trackable="offers-expander"></button>
+		</div>
+		<div class="o-expander__content consent-form__expander-content">
+			Receive exclusive event invitations, carefully-curated offers and promotions from The Financial Times:
+			<ul>
+				<li>Invitations to subscriber-only events</li>
+				<li>Discounts on FT subscriptions</li>
+				<li>Bespoke offers and promotions from the FT</li>
+				<li>Receive exclusive event invitations, carefully-curated offers and promotions from The Financial
+					Times.
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="consent-form__switches-group">
+		{{>yes-no-switch id="offers-email" label="By email"}}
+		{{>yes-no-switch id="offers-phone-call" label="By phone call"}}
+		{{>yes-no-switch id="offers-post" label="By post"}}
+	</div>
+	<div class="consent-form__consent-info" data-trackable="customer-message">
+		We'll still send you service messages about your account, security or legal notifications.
+	</div>
+</fieldset>

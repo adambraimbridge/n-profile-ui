@@ -1,0 +1,66 @@
+
+.consent-form__heading-level-3 {
+	@include oTypographySans($scale: 2);
+	font-weight: 400;
+	margin-top: oTypographySpacingSize(7);
+	margin-bottom: oTypographySpacingSize(2);
+}
+
+.consent-form__heading-3-group {
+	margin-bottom: oTypographySpacingSize(5);
+	display: flex;
+	align-items: baseline;
+	justify-content: space-between;
+	.consent-form__heading-level-3 {
+		margin-bottom: 0;
+	}
+}
+
+.consent-form__switches-group {
+	margin-top: oTypographySpacingSize(5);
+}
+
+.consent-form__consent-info {
+	margin-top: oTypographySpacingSize(8);
+	background-color: oColorsGetPaletteColor($name: 'wheat');
+	padding-left: oTypographySpacingSize(5);
+	padding-right: oTypographySpacingSize(5);
+	padding-top: 13px;
+	padding-bottom: 15px;
+}
+
+.consent-form__expander-toggle {
+	@include oExpanderToggle($font-color: oColorsGetPaletteColor($name: 'teal'), $icon-color: oColorsGetPaletteColor($name: 'teal'));
+	@include oTypographySans($scale: 0);
+}
+
+.consent-form__expander-content {
+	background-color: oColorsGetPaletteColor($name: 'white-60');
+	padding: oTypographySpacingSize(3);
+	@include oTypographySans($scale: 0);
+}
+
+.consent-form__intro-text {
+	@include oTypographySans($scale: 0);
+}
+
+.consent-form--inline {
+	max-width: none;
+	padding-left: 0;
+	padding-right: 0;
+	margin-bottom: oTypographySpacingSize(6);
+	&:last-child {
+		margin-bottom: 0;
+	}
+	.consent-form__inline-wrapper {
+		align-items: center;
+		justify-content: space-between;
+		display: flex;
+		.o-forms__group {
+			margin-bottom: 0;
+		}
+		.o-forms__group input + .o-forms__label {
+			margin: 0;
+		}
+	}
+}
