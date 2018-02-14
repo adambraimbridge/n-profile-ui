@@ -8,6 +8,7 @@ const consentOverlay = new Overlay('overlay-gdpr-consent', {
 });
 
 consentOverlay.open();
+
 document.addEventListener('oOverlay.ready', function () {
 	expander.init();
 });
