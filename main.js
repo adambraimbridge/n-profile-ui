@@ -6,6 +6,7 @@ const consentOverlay = new Overlay('overlay-gdpr-consent', {
 	modal: true,
 	fullscreen: true
 });
+
 consentOverlay.open();
 document.addEventListener('oOverlay.ready', function () {
 	expander.init();
