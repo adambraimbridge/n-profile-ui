@@ -1,5 +1,5 @@
 {
-  "name": "n-marketing-consent",
+  "name": "@financial-times/n-marketing-consent",
   "version": "1.0.0",
   "description": "Marketing consent form",
   "main": "main.js",
@@ -21,5 +21,8 @@
   "devDependencies": {
     "@financial-times/n-gage": "^1.19.6",
     "bower": "^1.8.2"
+  },
+  "engines": {
+    "node": "^8.9.4"
   }
 }

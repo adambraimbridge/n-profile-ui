@@ -1,5 +1,8 @@
 {
-  "name": "next-control-centre",
+  "name": "n-marketing-consent",
+  "homepage": "https://github.com/financial-times/n-marketing-consent",
+  "main": ["main.scss"],
+  "ignore": ["**/.*", "node_modules", "bower_components", "test", "tests"],
   "dependencies": {
     "o-forms": "^5.1.2",
     "o-buttons": "^5.8.4",
