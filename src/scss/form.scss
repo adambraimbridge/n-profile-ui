@@ -35,6 +35,7 @@
 }
 
 .consent-form__expander-content {
+	@include oExpanderContent;
 	background-color: oColorsGetPaletteColor($name: 'white-60');
 	padding: oTypographySpacingSize(3);
 	@include oTypographySans($scale: 0);
@@ -56,11 +57,25 @@
 		align-items: center;
 		justify-content: space-between;
 		display: flex;
-		.o-forms__group {
+		.consent-form__group {
 			margin-bottom: 0;
 		}
-		.o-forms__group input + .o-forms__label {
+		.consent-form__group input + .consent-form__label {
 			margin: 0;
 		}
+	}
+}
+
+.consent-form-link-external {
+	padding-right: oTypographySpacingSize(6);
+	position: relative;
+	&::after {
+		@include oIconsGetIcon('outside-page', oColorsGetPaletteColor('teal'), 24);
+		content: '';
+		display: block;
+		position: absolute;
+		right: 0;
+		top: 50%;
+		transform: translateY(-50%);
 	}
 }

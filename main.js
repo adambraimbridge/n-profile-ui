@@ -1,7 +1,12 @@
-const oOverlay = require('o-overlay');
+const Overlay = require('o-overlay');
+const expander = require('o-expander');
 
-oOverlay.init(document.querySelector('#overlay-gdpr-consent', {
-	src: '.consent-form',
+const consentOverlay = new Overlay('overlay-gdpr-consent', {
+	src: '.consent-form-content',
 	modal: true,
 	fullscreen: true
-}));
+});
+consentOverlay.open();
+document.addEventListener('oOverlay.ready', function () {
+	expander.init();
+});
