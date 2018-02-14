@@ -3,8 +3,7 @@ const expander = require('o-expander');
 
 const consentOverlay = new Overlay('overlay-gdpr-consent', {
 	src: '.consent-form-content',
-	modal: true,
-	fullscreen: true
+	modal: true
 });
 
 consentOverlay.open();

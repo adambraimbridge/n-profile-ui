@@ -1,0 +1,33 @@
+.consent-form__heading-level-2 {
+	@include oTypographyProductHeadingLevel2;
+}
+
+.consent-form__heading-level-3 {
+	@include oTypographyProductHeadingLevel7;
+	margin-bottom: 0;
+}
+
+.consent-form__heading-3-group {
+	margin-top: oTypographySpacingSize(6);
+	margin-bottom: oTypographySpacingSize(5);
+	display: flex;
+	align-items: baseline;
+	justify-content: space-between;
+	.consent-form__heading-level-2 {
+		margin-bottom: 0;
+	}
+}
+
+.consent-form-link-external {
+	padding-right: oTypographySpacingSize(6);
+	position: relative;
+	&::after {
+		@include oIconsGetIcon('outside-page', oColorsGetPaletteColor('teal'), 24);
+		content: '';
+		display: block;
+		position: absolute;
+		right: 0;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+}

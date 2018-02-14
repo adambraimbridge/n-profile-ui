@@ -1,14 +1,23 @@
 {
   "name": "n-marketing-consent",
   "homepage": "https://github.com/financial-times/n-marketing-consent",
-  "main": ["main.scss"],
-  "ignore": ["**/.*", "node_modules", "bower_components", "test", "tests"],
+  "main": [
+    "main.scss"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
   "dependencies": {
     "o-forms": "^5.1.2",
     "o-buttons": "^5.8.4",
     "o-icons": "^5.6.0",
     "o-colors": "^4.1.5",
     "o-typography": "^5.5.0",
-    "o-expander": "^4.4.4"
+    "o-expander": "^4.4.4",
+    "o-overlay": "^2.2.0"
   }
 }

@@ -1,21 +1,4 @@
 
-.consent-form__heading-level-3 {
-	@include oTypographySans($scale: 2);
-	font-weight: 400;
-	margin-top: oTypographySpacingSize(7);
-	margin-bottom: oTypographySpacingSize(2);
-}
-
-.consent-form__heading-3-group {
-	margin-bottom: oTypographySpacingSize(5);
-	display: flex;
-	align-items: baseline;
-	justify-content: space-between;
-	.consent-form__heading-level-3 {
-		margin-bottom: 0;
-	}
-}
-
 .consent-form__switches-group {
 	margin-top: oTypographySpacingSize(5);
 }
@@ -63,19 +46,5 @@
 		.consent-form__group input + .consent-form__label {
 			margin: 0;
 		}
-	}
-}
-
-.consent-form-link-external {
-	padding-right: oTypographySpacingSize(6);
-	position: relative;
-	&::after {
-		@include oIconsGetIcon('outside-page', oColorsGetPaletteColor('teal'), 24);
-		content: '';
-		display: block;
-		position: absolute;
-		right: 0;
-		top: 50%;
-		transform: translateY(-50%);
 	}
 }

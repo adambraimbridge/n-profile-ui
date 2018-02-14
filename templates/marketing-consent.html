@@ -1,7 +1,7 @@
 <fieldset name="marketing-consent" class="consent-form__fieldset consent-form">
 	<legend class="o-normalise-visually-hidden">Marketing consent</legend>
 	<div class="su-header">
-		<h2>Stay up to date</h2>
+		<h2 class="consent-form__heading-level-2">Keep up to date with the FT</h2>
 	</div>
 	<div class="consent-form__intro-text">
 		Choose how you want us to contact you. Update these any time in your preferences.
@@ -48,11 +48,8 @@
 		</div>
 	</div>
 	<div class="consent-form__switches-group">
-		{{>yes-no-switch id="offers-email" label="By email"}}
-		{{>yes-no-switch id="offers-phone-call" label="By phone call"}}
-		{{>yes-no-switch id="offers-post" label="By post"}}
-	</div>
-	<div class="consent-form__consent-info" data-trackable="customer-message">
-		We'll still send you service messages about your account, security or legal notifications.
+		{{>n-marketing-consent/templates/yes-no-switch id="offers-email" label="By email"}}
+		{{>n-marketing-consent/templates/yes-no-switch id="offers-phone-call" label="By phone call"}}
+		{{>n-marketing-consent/templates/yes-no-switch id="offers-post" label="By post"}}
 	</div>
 </fieldset>
