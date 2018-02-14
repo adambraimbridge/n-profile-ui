@@ -5,7 +5,7 @@
 	</div>
 	<div class="consent-form__intro-text">
 		Choose how you want us to contact you. Update these any time in your preferences.
-		<a class="su-link-external" href="https://help.ft.com/help/legal-privacy/privacy/" target="_blank">How we use
+		<a class="consent-form-link-external" href="https://help.ft.com/help/legal-privacy/privacy/" target="_blank">How we use
 			your data</a>
 	</div>
 	<div data-o-component="o-expander" data-o-expander-shrink-to="hidden" class="o-expander" data-o-expander-expanded-toggle-text="Tell me more" data-o-expander-collapsed-toggle-text="Tell me more">
@@ -16,7 +16,7 @@
 		</div>
 		<div class="o-expander__content consent-form__expander-content">
 			Get the most from The Financial Times with:
-			<ul>
+			<ul class="consent-form__bullets">
 				<li>Special reports and exclusive articles</li>
 				<li>Handpicked stories and recommended reads</li>
 				<li>Essential FT announcements</li>
@@ -37,7 +37,7 @@
 		</div>
 		<div class="o-expander__content consent-form__expander-content">
 			Receive exclusive event invitations, carefully-curated offers and promotions from The Financial Times:
-			<ul>
+			<ul class="consent-form__bullets">
 				<li>Invitations to subscriber-only events</li>
 				<li>Discounts on FT subscriptions</li>
 				<li>Bespoke offers and promotions from the FT</li>
@@ -51,5 +51,8 @@
 		{{>n-marketing-consent/templates/yes-no-switch id="offers-email" label="By email"}}
 		{{>n-marketing-consent/templates/yes-no-switch id="offers-phone-call" label="By phone call"}}
 		{{>n-marketing-consent/templates/yes-no-switch id="offers-post" label="By post"}}
+	</div>
+	<div class="consent-form__submit-wrapper">
+		<button type="button" class="consent-form__submit" disabled>Confirm</button>
 	</div>
 </fieldset>

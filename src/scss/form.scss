@@ -19,9 +19,15 @@
 
 .consent-form__expander-content {
 	@include oExpanderContent;
-	background-color: oColorsGetPaletteColor($name: 'white-60');
-	padding: oTypographySpacingSize(3);
+	background-color: oColorsMix(black, white, 5);
+	padding: oTypographySpacingSize(3) oTypographySpacingSize(5);
 	@include oTypographySans($scale: 0);
+}
+
+.consent-form__bullets {
+	padding-left: 16px;
+	margin-top: 8px;
+	margin-bottom: 0;
 }
 
 .consent-form__intro-text {
@@ -32,7 +38,7 @@
 	max-width: none;
 	padding-left: 0;
 	padding-right: 0;
-	margin-bottom: oTypographySpacingSize(6);
+	margin-bottom: oTypographySpacingSize(4);
 	&:last-child {
 		margin-bottom: 0;
 	}

@@ -1,5 +1,6 @@
 .consent-form__heading-level-2 {
-	@include oTypographyProductHeadingLevel2;
+	@include oTypographyProductHeadingLevel5;
+	margin-bottom: oTypographySpacingSize(2);
 }
 
 .consent-form__heading-level-3 {
@@ -22,7 +23,7 @@
 	padding-right: oTypographySpacingSize(6);
 	position: relative;
 	&::after {
-		@include oIconsGetIcon('outside-page', oColorsGetPaletteColor('teal'), 24);
+		@include oIconsGetIcon('series', oColorsGetPaletteColor('teal'), 24);
 		content: '';
 		display: block;
 		position: absolute;
