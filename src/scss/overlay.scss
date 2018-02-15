@@ -1,6 +1,15 @@
-.o-overlay--overlay-gdpr-consent {
+.o-overlay__content {
+	padding: 0;
+}
 
-	.o-overlay__content {
-		padding: 45px;
-	}
+.o-overlay__close {
+	border: 0 none;
+}
+
+.consent-form-content {
+	position: relative;
+}
+
+.consent-form-content__inner {
+	padding: 45px;
 }

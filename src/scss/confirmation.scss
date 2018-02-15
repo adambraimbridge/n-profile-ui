@@ -1,0 +1,16 @@
+.reconsent-confirmation {
+	display: block;
+	&.hidden {
+		display: none;
+	}
+}
+
+.consent-form__confirm-opt-in {
+	margin-top: 20px;
+	margin-bottom: 50px;
+}
+
+.consent-form__confirm-timer {
+	margin-top: 20px;
+	text-align: center;
+}

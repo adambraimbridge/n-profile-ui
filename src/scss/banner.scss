@@ -1,0 +1,13 @@
+@include oBanner($class: 'consent-banner', $themes: 'all');
+
+.consent-banner {
+	height: 0;
+}
+
+.consent-banner__outer {
+	transition: transform 0.2s ease-in-out;
+	will-change: transform;
+	&.active {
+		transform: translateY(-100%);
+	}
+}

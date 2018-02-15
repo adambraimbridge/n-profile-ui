@@ -1,8 +1,6 @@
 <fieldset name="marketing-consent" class="consent-form__fieldset consent-form">
 	<legend class="o-normalise-visually-hidden">Marketing consent</legend>
-	<div class="su-header">
-		<h2 class="consent-form__heading-level-2">Keep up to date with the FT</h2>
-	</div>
+	<h2 class="consent-form__heading-level-2">Keep up to date with the FT</h2>
 	<div class="consent-form__intro-text">
 		Choose how you want us to contact you. Update these any time in your preferences.
 		<a class="consent-form-link-external" href="https://help.ft.com/help/legal-privacy/privacy/" target="_blank">How we use
@@ -14,7 +12,7 @@
 			<button type="button" class="consent-form__expander-toggle o-expander__toggle o--if-js"
 					data-trackable="stories-expander"></button>
 		</div>
-		<div class="o-expander__content consent-form__expander-content">
+		<div class="o-expander__content consent-form__expander-content" aria-hidden="true">
 			Get the most from The Financial Times with:
 			<ul class="consent-form__bullets">
 				<li>Special reports and exclusive articles</li>
@@ -25,9 +23,9 @@
 		</div>
 	</div>
 	<div class="consent-form__switches-group">
-		{{>n-marketing-consent/templates/yes-no-switch id="stories-email" label="By email"}}
-		{{>n-marketing-consent/templates/yes-no-switch id="stories-phone-call" label="By phone call"}}
-		{{>n-marketing-consent/templates/yes-no-switch id="stories-post" label="By post"}}
+		{{>n-marketing-consent/templates/yes-no-switch id="reconsent-stories-email" label="By email"}}
+		{{>n-marketing-consent/templates/yes-no-switch id="reconsent-stories-phone-call" label="By phone call"}}
+		{{>n-marketing-consent/templates/yes-no-switch id="reconsent-stories-post" label="By post"}}
 	</div>
 	<div data-o-component="o-expander" data-o-expander-shrink-to="hidden" class="o-expander" data-o-expander-expanded-toggle-text="Tell me more" data-o-expander-collapsed-toggle-text="Tell me more">
 		<div class="consent-form__heading-3-group">
@@ -35,7 +33,7 @@
 			<button type="button" class="consent-form__expander-toggle o-expander__toggle o--if-js"
 					data-trackable="offers-expander"></button>
 		</div>
-		<div class="o-expander__content consent-form__expander-content">
+		<div class="o-expander__content consent-form__expander-content" aria-hidden="true">
 			Receive exclusive event invitations, carefully-curated offers and promotions from The Financial Times:
 			<ul class="consent-form__bullets">
 				<li>Invitations to subscriber-only events</li>
@@ -48,11 +46,11 @@
 		</div>
 	</div>
 	<div class="consent-form__switches-group">
-		{{>n-marketing-consent/templates/yes-no-switch id="offers-email" label="By email"}}
-		{{>n-marketing-consent/templates/yes-no-switch id="offers-phone-call" label="By phone call"}}
-		{{>n-marketing-consent/templates/yes-no-switch id="offers-post" label="By post"}}
+		{{>n-marketing-consent/templates/yes-no-switch id="reconsent-offers-email" label="By email"}}
+		{{>n-marketing-consent/templates/yes-no-switch id="reconsent-offers-phone-call" label="By phone call"}}
+		{{>n-marketing-consent/templates/yes-no-switch id="reconsent-offers-post" label="By post"}}
 	</div>
 	<div class="consent-form__submit-wrapper">
-		<button type="button" class="consent-form__submit" disabled>Confirm</button>
+		<button type="submit" class="consent-form__submit" disabled>Confirm</button>
 	</div>
 </fieldset>

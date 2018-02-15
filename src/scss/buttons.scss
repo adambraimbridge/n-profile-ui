@@ -2,7 +2,8 @@
 	margin-top: oTypographySpacingSize(5);
 }
 
-.consent-form__submit {
+.consent-form__submit,
+.consent-form__close {
 	@include oButtons();
 	@include oButtonsSize(big);
 	@include oButtonsTheme(primary);

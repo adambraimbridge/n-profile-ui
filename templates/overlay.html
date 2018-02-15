@@ -1,6 +1,13 @@
 <script type="text/template" id="overlay-gdpr-consent"></script>
 <div class="consent-form-content">
-	<form>
-		{{>n-marketing-consent/templates/marketing-consent}}
-	</form>
+	<button type="button" class="o-overlay__close"></button>
+	<div class="consent-form-content__inner">
+		<form class="reconsent-form">
+			{{>n-marketing-consent/templates/marketing-consent}}
+		</form>
+		<div class="reconsent-confirmation hidden">
+			{{>n-marketing-consent/templates/confirmation}}
+		</div>
+	</div>
 </div>
+{{>n-marketing-consent/templates/banner}}
