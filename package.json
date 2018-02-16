@@ -1,6 +1,6 @@
 {
   "name": "@financial-times/n-marketing-consent",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "description": "Marketing consent form",
   "main": "main.js",
   "scripts": {
