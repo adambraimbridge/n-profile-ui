@@ -44,15 +44,17 @@ module.exports = class Reconsent {
 	}
 
 	formSubmitEnable(form) {
-		let radiosChecked = 0;
 		const radios = form.querySelectorAll('.consent-form__radio-button');
 		const submitButton = form.querySelector('.consent-form__submit');
 		radios.forEach((radio) => {
 			radio.addEventListener('change', () => {
-				++radiosChecked;
-				if (radiosChecked >= radios.length/2) {
+				let enableSubmit = true;
+				form.querySelectorAll('.consent-form__radio-button').forEach(radio => {
+					if (!radio.checkValidity())
+						enableSubmit = false;
+				});
+				if (enableSubmit)
 					submitButton.removeAttribute('disabled');
-				}
 			});
 		});
 	}
