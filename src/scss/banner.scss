@@ -1,4 +1,4 @@
-@include oBanner($class: 'consent-banner', $themes: 'all');
+@include oBanner($class: 'consent-banner', $themes: false);
 
 .consent-banner {
 	height: 0;

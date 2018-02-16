@@ -1,3 +1,7 @@
+@include oFormsBaseFeatures($class: 'consent-form');
+@include oFormsRadioCheckboxFeatures($class: 'consent-form');
+@include oFormsRadioButtonsStyledFeature($class: 'consent-form');
+
 .reconsent-form.hidden {
 	display: none;
 }
