@@ -35,6 +35,8 @@ module.exports = class Reconsent {
 			this.formSubmitHandler(form);
 			this.overlayCloseHandler();
 			document.documentElement.classList.add('overlay-scroll-block');
+			const contentInner = document.querySelector('.reconsent-form');
+			contentInner.setAttribute('style', `height: ${contentInner.offsetHeight}px`)
 		});
 		document.addEventListener('oOverlay.destroy', () => {
 			document.documentElement.classList.remove('overlay-scroll-block');
@@ -61,24 +63,10 @@ module.exports = class Reconsent {
 			overlayContentWrapper.setAttribute('style', `height:auto;width:${overlayContentWrapper.offsetWidth}px`);
 			document.querySelector('.reconsent-confirmation').classList.remove('hidden');
 			form.classList.add('hidden');
-			this.setOverlayCloseCountdown();
+			document.querySelector('.o-overlay__close').innerHTML = '';
 			e.preventDefault();
 			e.stopPropagation();
 		});
-	}
-
-	setOverlayCloseCountdown() {
-		const countdownEl = document.querySelector('.consent-form__close-timer');
-		let secondsLeft = 10;
-		countdownEl.innerHTML = secondsLeft;
-		const interval = setInterval(() => {
-			--secondsLeft;
-			if (secondsLeft === 0) {
-				this.consentOverlay.close();
-				return clearInterval(interval);
-			}
-			countdownEl.innerHTML = secondsLeft;
-		}, 1000);
 	}
 
 	overlayCloseHandler() {

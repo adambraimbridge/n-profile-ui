@@ -2,6 +2,10 @@
 @include oFormsRadioCheckboxFeatures($class: 'consent-form');
 @include oFormsRadioButtonsStyledFeature($class: 'consent-form');
 
+.reconsent-form {
+	overflow-y: auto;
+}
+
 .reconsent-form.hidden {
 	display: none;
 }
@@ -13,6 +17,9 @@
 
 .consent-form__switches-group {
 	margin-top: oTypographySpacingSize(5);
+}
+.consent-form-content {
+	background-color: oColorsGetPaletteColor($name: 'paper');
 }
 
 .consent-form__consent-info {
@@ -31,7 +38,7 @@
 
 .consent-form__expander-content {
 	@include oExpanderContent;
-	background-color: oColorsMix(black, white, 5);
+	background-color: oColorsGetPaletteColor($name: 'wheat');
 	padding: oTypographySpacingSize(3) oTypographySpacingSize(5);
 	@include oTypographySans($scale: 0);
 }
