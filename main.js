@@ -34,6 +34,10 @@ module.exports = class Reconsent {
 			this.formSubmitEnable(form);
 			this.formSubmitHandler(form);
 			this.overlayCloseHandler();
+			document.documentElement.classList.add('overlay-scroll-block');
+		});
+		document.addEventListener('oOverlay.destroy', () => {
+			document.documentElement.classList.remove('overlay-scroll-block');
 		});
 	}
 
