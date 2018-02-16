@@ -7,6 +7,7 @@
 }
 
 .consent-form {
+	@include oTypographySans;
 	margin-bottom: 0;
 }
 
@@ -49,7 +50,7 @@
 	max-width: none;
 	padding-left: 0;
 	padding-right: 0;
-	margin-bottom: oTypographySpacingSize(4);
+	margin-bottom: oTypographySpacingSize(5);
 	&:last-child {
 		margin-bottom: 0;
 	}
@@ -64,4 +65,12 @@
 			margin: 0;
 		}
 	}
+}
+
+// push up to o-forms
+.consent-form__label {
+	@include oTypographySans(0);
+	font-weight: normal;
+	padding-top: 3px;
+	padding-bottom: 5px;
 }

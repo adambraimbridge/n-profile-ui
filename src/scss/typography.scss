@@ -1,6 +1,6 @@
 .consent-form__heading-level-2 {
-	@include oTypographyProductHeadingLevel5;
-	margin-bottom: oTypographySpacingSize(2);
+	@include oTypographyProductHeadingLevel3;
+	margin-bottom: oTypographySpacingSize(4);
 }
 
 .consent-form__heading-level-3 {
@@ -9,7 +9,7 @@
 }
 
 .consent-form__heading-3-group {
-	margin-top: oTypographySpacingSize(6);
+	margin-top: oTypographySpacingSize(5);
 	margin-bottom: oTypographySpacingSize(5);
 	display: flex;
 	align-items: baseline;
