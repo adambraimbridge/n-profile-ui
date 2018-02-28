@@ -1,15 +1,17 @@
+@import 'n-ui-foundations/util/main';
+
 .overlay-scroll-block {
 	height: 100%;
 	overflow: hidden;
 }
 
-.o-overlay {
-	z-index: 999999;
-}
-
 .o-overlay-shadow {
 	background-color: rgba(0,0,0,0.8);
-	z-index: 99999;
+	@include nUiZIndexFor('overlay');
+}
+
+.o-overlay {
+	@include nUiZIndexFor('overlay');
 }
 
 .o-overlay__content {

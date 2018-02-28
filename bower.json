@@ -19,6 +19,7 @@
     "o-typography": "^5.5.0",
     "o-expander": "^4.4.4",
     "o-overlay": "^2.2.1",
-    "o-banner": "^1.5.0"
+    "o-banner": "^1.5.0",
+    "n-ui-foundations": "^3.0.1"
   }
 }
