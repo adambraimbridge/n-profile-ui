@@ -2,7 +2,8 @@
   "name": "n-marketing-consent",
   "homepage": "https://github.com/financial-times/n-marketing-consent",
   "main": [
-    "main.scss"
+    "main.scss",
+    "./dist/main.js"
   ],
   "ignore": [
     "**/.*",

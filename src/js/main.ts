@@ -3,6 +3,8 @@ const expander = require('o-expander');
 const overlayContentSelector = '.consent-form-content';
 
 module.exports = class Reconsent {
+    consentOverlay: any;
+
 	constructor({flag}) {
 		if (flag === 'autoload')
 			this.overlaySetup();
@@ -35,7 +37,7 @@ module.exports = class Reconsent {
 			this.formSubmitHandler(form);
 			this.overlayCloseHandler();
 			document.documentElement.classList.add('overlay-scroll-block');
-			const contentInner = document.querySelector('.reconsent-form');
+			const contentInner = document.querySelector('.reconsent-form') as HTMLElement;
 			contentInner.setAttribute('style', `height: ${contentInner.offsetHeight}px`)
 		});
 		document.addEventListener('oOverlay.destroy', () => {
@@ -61,7 +63,7 @@ module.exports = class Reconsent {
 
 	formSubmitHandler(form) {
 		form.addEventListener('submit', (e) => {
-			const overlayContentWrapper = document.querySelector('.o-overlay__content');
+			const overlayContentWrapper = document.querySelector('.o-overlay__content') as HTMLElement;
 			overlayContentWrapper.setAttribute('style', `height:auto;width:${overlayContentWrapper.offsetWidth}px`);
 			document.querySelector('.reconsent-confirmation').classList.remove('hidden');
 			form.classList.add('hidden');
