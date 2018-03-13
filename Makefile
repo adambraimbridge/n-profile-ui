@@ -11,6 +11,3 @@ watch:
 	tsc -w
 
 build-production: build
-
-test:
-	mocha "test/**/*.spec.js" --recursive --require ./test/setup.js --exit
