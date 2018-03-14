@@ -12,6 +12,7 @@
 	margin-left: auto;
 	margin-right: auto;
 }
+
 .consent-form--scrollable {
 	overflow-y: auto;
 }
@@ -19,6 +20,7 @@
 .consent-form__switches-group {
 	margin-top: oTypographySpacingSize(5);
 }
+
 .consent-form-content {
 	background-color: oColorsGetPaletteColor($name: 'paper');
 }
