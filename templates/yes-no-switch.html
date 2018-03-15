@@ -1,14 +1,14 @@
 <fieldset class="consent-form consent-form--inline">
 	<div class="consent-form__inline-wrapper">
 		<div class="consent-form__inline-item">
-			<legend class="consent-form__label" id="legend-{{id}}">{{label}}</legend>
+			<legend class="consent-form__label" id="legend-{{category}}">{{label}}</legend>
 		</div>
 		<div class="consent-form__inline-item">
 			<div class="consent-form__group consent-form__group--inline-together">
-				<input type="radio" name="{{id}}" value="yes" class="consent-form__radio-button" id="{{id}}-yes" aria-describedby="legend-{{id}}" data-trackable="{{id}}-yes"{{#if required}} required{{/if}} />
-				<label for="{{id}}-yes" class="consent-form__label">Yes</label>
-				<input type="radio" name="{{id}}" value="no" class="consent-form__radio-button consent-form__radio-button--negative" id="{{id}}-no" aria-describedby="legend-{{id}}" data-trackable="{{id}}-no" />
-				<label for="{{id}}-no" class="consent-form__label">No</label>
+				<input type="radio" name="{{category}}-{{channel}}" value="yes" class="consent-form__radio-button" id="{{category}}-{{channel}}-yes" aria-describedby="legend-{{category}}-{{channel}}" data-trackable="{{category}}-{{channel}}-yes"{{#if checked}} checked{{/if}}{{#if required}} required{{/if}} />
+				<label for="{{category}}-{{channel}}-yes" class="consent-form__label">Yes</label>
+				<input type="radio" name="{{category}}-{{channel}}" value="no" class="consent-form__radio-button consent-form__radio-button--negative" id="{{category}}-{{channel}}-no" aria-describedby="legend-{{category}}-{{channel}}" data-trackable="{{category}}-no" />
+				<label for="{{category}}-{{channel}}-no" class="consent-form__label">No</label>
 			</div>
 		</div>
 	</div>

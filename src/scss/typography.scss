@@ -1,22 +1,12 @@
-.consent-form__heading-level-2 {
+.consent-form__heading-level-1 {
 	@include oTypographyProductHeadingLevel3;
 	margin-bottom: oTypographySpacingSize(4);
 }
 
-.consent-form__heading-level-3 {
-	@include oTypographyProductHeadingLevel7;
-	margin-bottom: 0;
-}
-
-.consent-form__heading-3-group {
+.consent-form__heading-level-2 {
+	@include oTypographyProductHeadingLevel6;
 	margin-top: oTypographySpacingSize(5);
-	margin-bottom: oTypographySpacingSize(5);
-	display: flex;
-	align-items: baseline;
-	justify-content: space-between;
-	.consent-form__heading-level-2 {
-		margin-bottom: 0;
-	}
+	margin-bottom: oTypographySpacingSize(3);
 }
 
 .consent-form-link-external {
