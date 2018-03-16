@@ -1,7 +1,7 @@
 {
-  "name": "@financial-times/n-marketing-consent",
+  "name": "@financial-times/n-profile-ui",
   "version": "0.0.0",
-  "description": "Marketing consent form",
+  "description": "UI components for profile / consent",
   "main": "dist/main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Financial-Times/n-marketing-consent.git"
+    "url": "git+https://github.com/Financial-Times/n-profile-ui.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Financial-Times/n-marketing-consent/issues"
+    "url": "https://github.com/Financial-Times/n-profile-ui/issues"
   },
-  "homepage": "https://github.com/Financial-Times/n-marketing-consent#readme",
+  "homepage": "https://github.com/Financial-Times/n-profile-ui#readme",
   "devDependencies": {
     "@financial-times/n-gage": "^1.19.6",
     "@types/node": "^9.4.7",

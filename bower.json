@@ -1,6 +1,6 @@
 {
-  "name": "n-marketing-consent",
-  "homepage": "https://github.com/financial-times/n-marketing-consent",
+  "name": "n-profile-ui",
+  "homepage": "https://github.com/financial-times/n-profile-ui",
   "main": [
     "main.scss",
     "./dist/main.js"
