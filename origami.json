@@ -1,0 +1,16 @@
+{
+	"description": "UI components for user profile and consent",
+	"keywords": "",
+	"origamiType": "module",
+	"origamiCategory": "components",
+	"origamiVersion": 1,
+	"support": "https://github.com/Financial-Times/n-profile-ui/issues",
+	"supportContact": {
+		"email": "next-gdpr-dev@ft.com",
+		"slack": "financialtimes/ft-next-gdpr"
+	},
+	"browserFeatures": {},
+	"ci": {
+		"circle": "https://circleci.com/api/v1/project/Financial-Times/n-profile-ui"
+	}
+}
