@@ -6,12 +6,12 @@
 {{/if}}
 </h1>
 {{/if}}
+<input type="hidden" name="formOfWordsVersion" value="{{formOfWords.id}}"{{#if fowVersionElAttrs}}{{{fowVersionElAttrs}}}{{/if}} />
 <div class="consent-form__intro-text">
 	{{#if formOfWords.copy.straplineSmall}}{{formOfWords.copy.straplineSmall}}{{/if}}
 	<a class="consent-form-link-external" href="https://help.ft.com/help/legal-privacy/privacy/" target="_blank">{{formOfWords.copy.dataUseLink}}</a>
 </div>
 <fieldset name="consent" class="consent-form">
-	<input type="hidden" name="formOfWordsVersion" value="{{formOfWords.id}}" />
 	<legend class="o-normalise-visually-hidden">Marketing consent</legend>
 	{{#each formOfWords.consents}}
 	<div class="consent-form__section">
@@ -21,7 +21,7 @@
 		</div>
 		<div class="consent-form__switches-group">
 			{{#each channels}}
-			{{>n-profile-ui/templates/yes-no-switch category=../category label=label channel=channel checked=lbi }}
+			{{>n-profile-ui/templates/yes-no-switch label=label id=id checked=checked elementAttrs=elementAttrs }}
 			{{/each}}
 		</div>
 	</div>
