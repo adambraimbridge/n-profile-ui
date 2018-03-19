@@ -1,13 +1,16 @@
-<fieldset name="marketing-consent" class="consent-form">
+<fieldset name="consent" class="consent-form">
 	<input type="hidden" name="formOfWordsVersion" value="{{formOfWords.id}}" />
 	<legend class="o-normalise-visually-hidden">Marketing consent</legend>
-	<h1 class="consent-form__heading-level-1">{{formOfWords.copy.heading1}}</h1>
+	<{{#if isSubsection}}h2{{else}}h1{{/if}} class="consent-form__heading-level-1">
+	{{formOfWords.copy.heading1}}
+	<span class="consent-form__heading-strapline">{{formOfWords.copy.strapline}}</span>
+	</{{#if isSubsection}}h2{{else}}h1{{/if}}>
 	<div class="consent-form__intro-text">
 		<a class="consent-form-link-external" href="https://help.ft.com/help/legal-privacy/privacy/" target="_blank">{{formOfWords.copy.dataUseLink}}</a>
 	</div>
 	{{#each formOfWords.consents}}
 	<div class="consent-form__section">
-		<h3 class="consent-form__heading-level-2 consent-form__no-margin-bottom">{{heading}}</h3>
+		<{{#if isSubsection}}h3{{else}}h2{{/if}} class="consent-form__heading-level-2 consent-form__no-margin-bottom">{{heading}}</{{#if isSubsection}}h3{{else}}h2{{/if}}>
 		<div class="consent-form__section-label">
 			{{label}}
 		</div>

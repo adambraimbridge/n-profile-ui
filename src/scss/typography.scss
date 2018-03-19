@@ -3,13 +3,20 @@
 	margin-bottom: oTypographySpacingSize(4);
 }
 
+.consent-form__heading-strapline {
+	display: block;
+	font-weight: 400;
+}
+
 .consent-form__heading-level-2 {
-	@include oTypographyProductHeadingLevel6;
+	@include oTypographyProductHeadingLevel7;
 	margin-top: oTypographySpacingSize(5);
 	margin-bottom: oTypographySpacingSize(3);
+	@include oTypographyBold(sans);
 }
 
 .consent-form-link-external {
+	@include oTypographyLink;
 	padding-right: oTypographySpacingSize(6);
 	position: relative;
 	&::after {
