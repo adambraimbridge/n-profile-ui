@@ -41,7 +41,7 @@
     "node": "^8.9.4"
   },
   "dependencies": {
-    "@financial-times/n-user-api-client": "^1.9.1",
+    "@financial-times/n-user-api-client": "^2.0.0",
     "isomorphic-fetch": "^2.2.1"
   }
 }
