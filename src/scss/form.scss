@@ -97,7 +97,7 @@ $five-sixths-width: percentage(5 / 6);
 
 .consent-form__label-bold {
 	@include oTypographySans(2);
-	font-weight: 600;
+	font-weight: oFontsWeight(semibold);
 }
 
 .consent-form__radio-button+.consent-form__label {
@@ -106,7 +106,7 @@ $five-sixths-width: percentage(5 / 6);
 }
 
 .consent-form__item-advisory{
-	font-weight: 600;
+	font-weight: oFontsWeight(semibold);
 	margin-top: oTypographySpacingSize(3);
 	@include oGridRespondTo(M) {
 		width: $five-sixths-width;
