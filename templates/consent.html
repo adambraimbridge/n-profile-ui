@@ -1,15 +1,18 @@
 {{#if showHeading}}
+{{#if isSubsection}}
+<h2 class="consent-form__heading-level-1">
+{{else}}
 <h1 class="consent-form__heading-level-1">
+{{/if}}
 	{{formOfWords.copy.heading1}}
 	{{#if formOfWords.copy.straplineHeading}}
 		<span class="consent-form__heading-strapline">{{formOfWords.copy.straplineHeading}}</span>
 	{{/if}}
-</h1>
+{{#if isSubsection}}</h1>{{else}}</h2>{{/if}}
 <div class="consent-form__intro-text">
 	{{#if formOfWords.copy.straplineSmall}}
 		{{formOfWords.copy.straplineSmall}}
 	{{/if}}
-	<a class="consent-form-link-external" href="https://help.ft.com/help/legal-privacy/privacy/" target="_blank">{{formOfWords.copy.dataUseLink}}</a>
 </div>
 {{/if}}
 <input type="hidden" name="formOfWordsId" value="{{formOfWords.id}}" />
@@ -20,11 +23,11 @@
 	{{#each formOfWords.consents}}
 	<div class="consent-form__section">
 		{{#if isSubsection}}
-		<h3 class="consent-form__heading-level-2 consent-form__no-margin-bottom">
+		<h3 class="consent-form__heading-level-3">
 			{{heading}}
 		</h3>
 		{{else}}
-		<h2 class="consent-form__heading-level-2 consent-form__no-margin-bottom">
+		<h2 class="consent-form__heading-level-3">
 			{{heading}}
 		</h2>
 		{{/if}}
@@ -40,7 +43,7 @@
 	{{/each}}
 	{{#if formOfWords.copy.serviceMessagesInfo}}
 	<div class="consent-form__consent-info">
-		{{formOfWords.copy.serviceMessagesInfo}}
+		{{{formOfWords.copy.serviceMessagesInfo}}}
 	</div>
 	{{/if}}
 	{{#if showSubmitButton}}
