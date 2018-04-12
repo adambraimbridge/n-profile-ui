@@ -1,29 +1,29 @@
 {{#if showHeading}}
 {{#if isSubsection}}
 <h2 class="consent-form__heading-level-1">
-{{else}}
-<h1 class="consent-form__heading-level-1">
-{{/if}}
-	{{formOfWords.copy.heading1}}
-	{{#if formOfWords.copy.straplineHeading}}
+	{{else}}
+	<h1 class="consent-form__heading-level-1">
+		{{/if}}
+		{{formOfWords.copy.heading1}}
+		{{#if formOfWords.copy.straplineHeading}}
 		<span class="consent-form__heading-strapline">{{formOfWords.copy.straplineHeading}}</span>
-	{{/if}}
-{{#if isSubsection}}</h1>{{else}}</h2>{{/if}}
+		{{/if}}
+		{{#if isSubsection}}</h1>{{else}}
+</h2>{{/if}}
 <div class="consent-form__intro-text">
 	{{#if formOfWords.copy.straplineSmall}}
-		{{formOfWords.copy.straplineSmall}}
+	{{formOfWords.copy.straplineSmall}}
 	{{/if}}
 </div>
 {{/if}}
 <input type="hidden" name="formOfWordsId" value="{{formOfWords.id}}" />
 <input type="hidden" name="formOfWordsScope" value="{{formOfWords.scope}}" />
 <input type="hidden" name="consentSource" value="{{formOfWords.source}}" />
-<fieldset name="consent" class="consent-form">
-	<legend class="o-normalise-visually-hidden">Marketing consent</legend>
+<div name="consent" class="consent-form">
 	<div class="consent-form__section-wrapper">
 		{{#each formOfWords.consents}}
 		<div class="consent-form__section">
-			{{#if isSubsection}}
+			{{#if ../isSubsection}}
 			<h3 class="consent-form__heading-level-3">
 				{{heading}}
 			</h3>
@@ -52,11 +52,11 @@
 	<div class="consent-form__submit-wrapper">
 		<button type="submit" class="consent-form__submit">
 			{{#if formOfWords.copy.submitButton}}
-				{{{formOfWords.copy.submitButton}}}
+			{{{formOfWords.copy.submitButton}}}
 			{{else}}
-				Confirm
+			Confirm
 			{{/if}}
 		</button>
 	</div>
 	{{/if}}
-</fieldset>
+</div>
