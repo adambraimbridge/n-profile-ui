@@ -6,7 +6,9 @@
 {{/if}}
 <div class="consent-form__intro-text">
 	{{{formOfWords.copy.straplineSmall}}}
+	{{#unless noOutboundLinks}}
 	<a class="consent-form-link-external" href="https://help.ft.com/help/legal-privacy/privacy/" target="_blank">{{formOfWords.copy.dataUseLink}}</a>
+	{{/unless}}
 </div>
 <input type="hidden" name="formOfWordsId" value="{{formOfWords.id}}" />
 <input type="hidden" name="formOfWordsScope" value="{{formOfWords.scope}}" />
@@ -20,9 +22,11 @@
 			<h2 class="consent-form__heading-level-2">
 				{{label}}
 			</h2>
+			{{#unless ../noOutboundLinks}}
 			<div>
 				<a class="consent-form-link-external" href="https://help.ft.com/help/legal-privacy/privacy/" target="_blank">Learn more</a>
 			</div>
+			{{/unless}}
 		</div>
 		{{/unless}}
 		<div class="consent-form__switches-group consent-form__switches-group--bordered">
