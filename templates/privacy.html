@@ -13,8 +13,7 @@
 <input type="hidden" name="formOfWordsId" value="{{formOfWords.id}}" />
 <input type="hidden" name="formOfWordsScope" value="{{formOfWords.scope}}" />
 <input type="hidden" name="consentSource" value="{{formOfWords.source}}" />
-<fieldset name="consent" class="consent-form">
-	<legend class="o-normalise-visually-hidden">Privacy settings</legend>
+<div name="consent" class="consent-form">
 	{{#each formOfWords.consents}}
 	<div class="consent-form__section">
 		{{#unless hideLabel}}
@@ -45,4 +44,4 @@
 			{{/if}}
 		</button>
 	</div>
-</fieldset>
+</div>
