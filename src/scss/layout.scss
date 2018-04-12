@@ -8,4 +8,8 @@
 
 .consent-row--justify-between {
 	justify-content: space-between;
+	// required for IE11
+	.consent-row__cell-grow {
+		flex-grow: 1;
+	}
 }
