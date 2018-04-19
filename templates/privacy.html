@@ -19,8 +19,9 @@
 		{{> n-profile-ui/templates/subheading
 			text=label
 			hideLink=../noOutboundLinks
+			linkText='Learn more'
 			linkUrl='https://help.ft.com/help/legal-privacy/privacy' }}
-		<div class="consent-form__switches-group consent-form__switches-group--bordered">
+		<div>
 			{{#each channels}}
 			{{>n-profile-ui/templates/yes-no-switch category=../category}}
 			{{/each}}
