@@ -53,8 +53,15 @@ $two-thirds-width: percentage(2 / 3);
 	background-color: oColorsGetPaletteColor($name: 'wheat');
 	padding-left: oTypographySpacingSize(5);
 	padding-right: oTypographySpacingSize(5);
-	padding-top: 13px;
-	padding-bottom: 15px;
+	padding-top: 14px;
+	padding-bottom: oTypographySpacingSize(6);
+}
+
+.consent-form__consent-info-para {
+	margin-bottom: oTypographySpacingSize(3);
+	&:last-of-type {
+		margin-bottom: 0;
+	}
 }
 
 .consent-form--inline {
@@ -90,12 +97,12 @@ $two-thirds-width: percentage(2 / 3);
 	font-weight: oFontsWeight(semibold);
 }
 
-.consent-form__radio-button+.consent-form__label {
+.consent-form__radio-button + .consent-form__label {
 	padding-top: 3px;
 	padding-bottom: 5px;
 }
 
-.consent-form__item-advisory{
+.consent-form__item-advisory {
 	@include oTypographySans(0);
 	background-color: oColorsGetPaletteColor($name: 'wheat');
 	margin-top: oTypographySpacingSize(3);
@@ -104,3 +111,4 @@ $two-thirds-width: percentage(2 / 3);
 		width: $two-thirds-width;
 	}
 }
+

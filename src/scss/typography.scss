@@ -21,3 +21,7 @@
 	border-top: 1px solid oColorsGetPaletteColor('black-30');
 	margin-bottom: oTypographySpacingSize(1);
 }
+
+.consent-form__link--external {
+	@include oTypographyLinkExternal;
+}
