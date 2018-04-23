@@ -31,7 +31,7 @@ $two-thirds-width: percentage(2 / 3);
 }
 
 .consent-form__section-label {
-	margin-top: oTypographySpacingSize(8);
+	margin-top: oTypographySpacingSize(2);
 }
 .consent-form__intro-text {
 	@include oTypographySans(2);
