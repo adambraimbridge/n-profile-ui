@@ -30,6 +30,9 @@ $two-thirds-width: percentage(2 / 3);
 	}
 }
 
+.consent-form__section-label {
+	margin-top: oTypographySpacingSize(8);
+}
 .consent-form__intro-text {
 	@include oTypographySans(2);
 	margin-bottom: oTypographySpacingSize(6)
