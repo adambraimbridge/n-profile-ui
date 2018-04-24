@@ -17,7 +17,7 @@ export class ConsentMessage {
 		this.element = element as HTMLElement;
 
 		this._message = new oMessage(this.element, {
-			close: true
+			messageClass: 'consent-message'
 		});
 
 		if(this.options.hideOnInit) {

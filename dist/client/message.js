@@ -10,7 +10,7 @@ class ConsentMessage {
 		}
 		this.element = element;
 		this._message = new o_message_1.default(this.element, {
-			close: true
+			messageClass: 'consent-message'
 		});
 		if (this.options.hideOnInit) {
 			this.hide();
