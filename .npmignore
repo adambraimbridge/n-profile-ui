@@ -1,2 +1,2 @@
-./dist/client
-./src/client
+/dist/client
+/src/js/client
