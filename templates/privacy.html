@@ -2,8 +2,16 @@
 	{{formOfWords.copy.heading1}}
 </h1>
 {{#if changesSaved}}
-	{{>n-profile-ui/templates/changes-saved-message}}
+<div class="margin-top-x4 margin-bottom-x5">
+	{{>n-profile-ui/templates/components/changes-saved-message}}
+</div>
 {{/if}}
+
+{{#with formOfWords.error}}
+<div class="consent-msg consent-msg--error margin-top-x4 margin-bottom-x5">
+	{{>n-profile-ui/templates/components/error-message-core error=formOfWords.error}}
+</div>
+{{/with}}
 <div class="consent-form__intro-text">
 	{{{formOfWords.copy.straplineSmall}}}
 </div>
