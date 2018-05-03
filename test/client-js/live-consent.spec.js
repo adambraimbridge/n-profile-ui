@@ -10,12 +10,14 @@ describe('Live consent form', () => {
 		initConsentForm(() => { afterFormSaved(); });
 	});
 
+	const radioButton = () => $('#categoryB-channel1-yes');
+
 	it('shows an updated switch value when the form is saved', async done => {
 		stubFetch();
-		expect($('#categoryB-channel1-yes').prop('checked')).toEqual(false);
-		$('#categoryB-channel1-yes').click();
+		expect(radioButton().prop('checked')).toEqual(false);
+		radioButton().click();
 		afterFormSaved = () => {
-			expect($('#categoryB-channel1-yes').prop('checked')).toEqual(true);
+			expect(radioButton().prop('checked')).toEqual(true);
 			done();
 		};
 	});
@@ -24,10 +26,10 @@ describe('Live consent form', () => {
 		const redirectLocation = '/login';
 		stubFetch({ responseCode: 403 });
 		const locationSpy = sinon.spy(window.location, 'assign');
-		$('#categoryB-channel1-yes').click();
+		radioButton().click();
 		afterFormSaved = () => {
 			expect(locationSpy.calledWith(redirectLocation)).toEqual(true);
-			expect($('#categoryB-channel1-yes').prop('checked')).toEqual(false);
+			expect(radioButton().prop('checked')).toEqual(false);
 			done();
 		};
 	});
