@@ -7,10 +7,10 @@ node_modules/@financial-times/n-gage/index.mk:
 build:
 	rm -rf dist
 	tsc -p tsconfig.commonjs.json
-	tsc -p tsconfig.es6.json
+	tsc -p tsconfig.esm.json
 
 watch:
-	tsc -w -p tsconfig.commonjs.json -p tsconfig.es6.json
+	tsc -w -p tsconfig.commonjs.json -p tsconfig.esm.json
 
 build-production: build
 
@@ -40,7 +40,7 @@ build-demo:
 	@$(DONE)
 
 demo: build-demo
-	ts-node demos/app.ts
+	ts-node --project demos/tsconfig.demo.json demos/app.ts
 
 a11y:
 	@node .pa11yci.js

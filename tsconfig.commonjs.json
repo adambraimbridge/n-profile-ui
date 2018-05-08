@@ -1,21 +1,7 @@
 {
-  "exclude": [
-    "node_modules",
-    "bower_components",
-    "dist",
-    "demos",
-    "test",
-    "src/js/client"
-  ],
+  "extends": "./tsconfig.esm.json",
   "compilerOptions": {
-    "target": "es2017",
     "module": "commonjs",
-    "sourceMap": false,
-    "outDir": "./dist/commonjs",
-    "rootDir": "./src/js",
-    "strict": true,
-    "removeComments": true,
-    "lib": ["es2017", "dom"],
-    "noImplicitAny": false
+    "outDir": "./dist/commonjs"
   }
 }

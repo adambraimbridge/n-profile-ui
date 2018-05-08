@@ -4,14 +4,13 @@
     "bower_components",
     "dist",
     "demos",
-    "test",
-    "src/js/server"
+    "test"
   ],
   "compilerOptions": {
     "target": "es2017",
     "sourceMap": false,
-    "outDir": "./dist/es6",
-    "rootDir": "./src/js",
+    "outDir": "./dist/esm",
+    "rootDirs": [ "./src/js" ],
     "strict": true,
     "removeComments": true,
     "lib": ["es2017", "dom"],
