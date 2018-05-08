@@ -2,7 +2,6 @@
   "exclude": ["node_modules", "bower_components", "dist", "demos", "test"],
   "compilerOptions": {
     "target": "es2017",
-    "module": "commonjs",
     "sourceMap": false,
     "outDir": "./dist",
     "rootDir": "./src/js",
