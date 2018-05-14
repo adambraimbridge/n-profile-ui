@@ -14,3 +14,8 @@
 	@include oTypographyLinkExternal;
 	@include oTypographySans(0);
 }
+
+.subheading--minor:before,
+.subheading--minor:after {
+	border-top-width: 1px;
+}
