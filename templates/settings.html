@@ -4,13 +4,13 @@
 </h1>
 {{/if}}
 {{#if changesSaved}}
-<div class="margin-top-x4 margin-bottom-x5">
+<div class="t-settings-saved margin-top-x4 margin-bottom-x5">
 	{{>n-profile-ui/templates/components/changes-saved-message}}
 </div>
 {{/if}}
 
 {{#with formOfWords.error}}
-<div class="consent-msg consent-msg--error margin-top-x4 margin-bottom-x5">
+<div class="t-settings-error consent-msg consent-msg--error margin-top-x4 margin-bottom-x5">
 	{{>n-profile-ui/templates/components/error-message-core error=formOfWords.error}}
 </div>
 {{/with}}
