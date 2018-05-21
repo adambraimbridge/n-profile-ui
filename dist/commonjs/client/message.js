@@ -17,14 +17,17 @@ class ConsentMessage {
 		}
 	}
 	hide () {
-		this.element.classList.add('.consent-message--hidden');
+		this.element.classList.add('consent-message--hidden');
 	}
 	show () {
-		this.element.classList.remove('.consent-message--hidden');
+		this.element.classList.remove('consent-message--hidden');
 	}
-	init () {
-		if (this.options.hideOnInit) {
+	init (showMessage) {
+		if (showMessage) {
 			this.show();
+		}
+		else {
+			this.hide();
 		}
 	}
 }
