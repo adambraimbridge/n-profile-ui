@@ -23,8 +23,16 @@
 	margin-top: oTypographySpacingSize(2);
 }
 
+.margin-top-x3 {
+	margin-top: oTypographySpacingSize(3);
+}
+
 .margin-top-x4 {
 	margin-top: oTypographySpacingSize(4);
+}
+
+.margin-top-x5 {
+	margin-top: oTypographySpacingSize(5);
 }
 
 .margin-top-x6 {
@@ -33,6 +41,14 @@
 
 .margin-bottom-x1 {
 	margin-bottom: oTypographySpacingSize(1);
+}
+
+.margin-bottom-x2 {
+	margin-bottom: oTypographySpacingSize(2);
+}
+
+.margin-bottom-x3 {
+	margin-bottom: oTypographySpacingSize(3);
 }
 
 .margin-bottom-x4 {
@@ -63,16 +79,16 @@
 	margin-bottom: oTypographySpacingSize(10);
 }
 
+.padding-top-x9 {
+	padding-top: oTypographySpacingSize(9);
+}
+
 .padding-bottom-x2 {
 	padding-bottom: oTypographySpacingSize(2);
 }
 
 .padding-bottom-x7 {
 	padding-bottom: oTypographySpacingSize(7);
-}
-
-.padding-top-x9 {
-	padding-top: oTypographySpacingSize(9);
 }
 
 .padding-bottom-x15 {
