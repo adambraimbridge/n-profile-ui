@@ -115,6 +115,13 @@ $two-thirds-width: percentage(2 / 3);
 	}
 }
 
+.consent-form__item-advisory-para {
+	margin-top: 0;
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+
 .consent-form__limit-width {
 	@include oGridRespondTo(M) {
 		width: 80%;
