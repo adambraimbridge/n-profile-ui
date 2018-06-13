@@ -34,6 +34,7 @@ $two-thirds-width: percentage(2 / 3);
 .consent-form__section-label {
 	margin-top: oTypographySpacingSize(2);
 }
+
 .consent-form__intro-text {
 	@include oTypographySans(2);
 	margin-bottom: oTypographySpacingSize(6)
@@ -108,7 +109,6 @@ $two-thirds-width: percentage(2 / 3);
 .consent-form__item-advisory {
 	@include oTypographySans(0);
 	background-color: oColorsGetPaletteColor($name: 'wheat');
-	margin-top: oTypographySpacingSize(3);
 	padding: oTypographySpacingSize(3) oTypographySpacingSize(5) oTypographySpacingSize(4) oTypographySpacingSize(5);
 	@include oGridRespondTo(M) {
 		width: $two-thirds-width;
