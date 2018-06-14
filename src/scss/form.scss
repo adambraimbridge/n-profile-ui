@@ -11,6 +11,7 @@ $two-thirds-width: percentage(2 / 3);
 	max-width: none;
 	padding-left: 0;
 	padding-right: 0;
+    margin-bottom: oTypographySpacingSize(9);
 	&.hidden {
 		display: none;
 	}
@@ -110,9 +111,7 @@ $two-thirds-width: percentage(2 / 3);
 	@include oTypographySans(0);
 	background-color: oColorsGetPaletteColor($name: 'wheat');
 	padding: oTypographySpacingSize(3) oTypographySpacingSize(5) oTypographySpacingSize(4) oTypographySpacingSize(5);
-	@include oGridRespondTo(M) {
-		width: $two-thirds-width;
-	}
+	margin-top: oTypographySpacingSize(5);
 }
 
 .consent-form__item-advisory-para {
