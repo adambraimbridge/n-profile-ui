@@ -11,7 +11,7 @@ $two-thirds-width: percentage(2 / 3);
 	max-width: none;
 	padding-left: 0;
 	padding-right: 0;
-    margin-bottom: oTypographySpacingSize(9);
+	margin-bottom: oTypographySpacingSize(9);
 	&.hidden {
 		display: none;
 	}
@@ -90,6 +90,13 @@ $two-thirds-width: percentage(2 / 3);
 }
 
 // push up to o-forms
+
+.consent-form--inline-controls > .consent-form__inline-container {
+	@include oGridRespondTo($until: S) {
+		display: block;
+	}
+}
+
 .consent-form__label {
 	@include oTypographySans(0);
 	font-weight: normal;
@@ -112,6 +119,9 @@ $two-thirds-width: percentage(2 / 3);
 	background-color: oColorsGetPaletteColor($name: 'wheat');
 	padding: oTypographySpacingSize(3) oTypographySpacingSize(5) oTypographySpacingSize(4) oTypographySpacingSize(5);
 	margin-top: oTypographySpacingSize(5);
+	@include oGridRespondTo($until: S) {
+		margin-bottom: oTypographySpacingSize(5);
+	}
 }
 
 .consent-form__item-advisory-para {
