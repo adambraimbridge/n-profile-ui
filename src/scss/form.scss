@@ -96,20 +96,12 @@ $two-thirds-width: percentage(2 / 3);
 .consent-form__label {
 	@include oTypographySans(0);
 	font-weight: normal;
-	padding-top: 3px;
-	padding-bottom: 5px;
 }
 
 .consent-form__label-bold {
 	@include oTypographySans(2);
 	font-weight: oFontsWeight(semibold);
 }
-
-.consent-form__radio-button + .consent-form__label {
-	padding-top: 3px;
-	padding-bottom: 5px;
-}
-
 .consent-form__item-advisory {
 	@include oTypographySans(0);
 	background-color: oColorsGetPaletteColor($name: 'wheat');
