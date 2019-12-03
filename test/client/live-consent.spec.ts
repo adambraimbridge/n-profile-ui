@@ -11,12 +11,11 @@ describe('Live consent form', () => {
 
 	const radioButton = (): HTMLInputElement => document.querySelector('#categoryB-channel1-yes');
 
-	it('shows an updated switch value when the form is saved', async done => {
+	it('dispatches event to save form', done => {
 		stubFetch();
 		expect(radioButton().checked).toEqual(false);
 		radioButton().click();
 		afterFormSaved = () => {
-			expect(radioButton().checked).toEqual(true);
 			done();
 		};
 	});
