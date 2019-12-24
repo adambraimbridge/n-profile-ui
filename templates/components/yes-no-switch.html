@@ -25,7 +25,13 @@
 						{{#if checkedYes}} checked{{/if}}
 						{{#each elementAttrs}} {{{name}}}{{#if value}}="{{{value}}}"{{/if}}{{/each}}
 					/>
-					<span class="o-forms-input__label" aria-hidden="true">Yes</span>
+					<span class="o-forms-input__label" aria-hidden="true">
+						{{#if toggleOnLabel}}
+							{{toggleOnLabel}}
+						{{else}}
+							Yes
+						{{/if}}
+					</span>
 				</label>
 				<label>
 					<input
@@ -38,7 +44,13 @@
 						data-trackable="{{#if lbi}}lbi{{else}}consent{{/if}}-{{{category}}}-{{{channel}}}-no"
 						{{#if checkedNo}} checked{{/if}}{{#each elementAttrs}} {{{name}}}{{#if value}}="{{{value}}}"{{/if}}{{/each}}
 					/>
-					<span class="o-forms-input__label" aria-hidden="true">No</span>
+					<span class="o-forms-input__label" aria-hidden="true">
+						{{#if toggleOffLabel}}
+							{{toggleOffLabel}}
+						{{else}}
+							No
+						{{/if}}
+						</span>
 				</label>
 			</div>
 			<div class="o-forms-input__state" aria-hidden="false" aria-live="polite"></div>

@@ -11,7 +11,7 @@ export class LiveUpdateConsent extends ConsentForm {
 
 	private saveSuccess (radioWrapper) {
 		if (radioWrapper) {
-			radioWrapper.classList.remove('o-forms-input--error');
+			radioWrapper.classList.remove('o-forms-input--invalid');
 			radioWrapper.classList.remove('o-forms-input--saving');
 			radioWrapper.classList.add('o-forms-input--saved');
 		}
@@ -21,9 +21,9 @@ export class LiveUpdateConsent extends ConsentForm {
 	private saveFail (radioWrapper) {
 		if (radioWrapper) {
 			radioWrapper.classList.remove('o-forms-input--saving');
-			radioWrapper.classList.add('o-forms-input--error');
+			radioWrapper.classList.add('o-forms-input--invalid');
 			// reset radio to previous value
-			const unchecked = radioWrapper.querySelector('.o-forms-input__radio-button:not(:checked)');
+			const unchecked = radioWrapper.querySelector('.consent-form__radio-button:not(:checked)');
 			if (unchecked) {
 				unchecked.checked = true;
 			}

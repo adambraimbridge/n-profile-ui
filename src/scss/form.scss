@@ -94,3 +94,21 @@ $two-thirds-width: percentage(2 / 3);
 		margin-bottom: 0;
 	}
 }
+
+.consent-form__item-advisory {
+	@include oTypographySans(0);
+	background-color: oColorsByName('wheat');
+	padding: oSpacingByName('s3') oSpacingByName('s4') oSpacingByName('s4');
+	margin-top: oSpacingByName('s6');
+	@include oGridRespondTo($until: S) {
+		margin-bottom: oSpacingByName('s6');
+	}
+}
+
+.consent-form__item-advisory-para {
+	margin-top: 0;
+	margin-bottom: oSpacingByName('s2');
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
