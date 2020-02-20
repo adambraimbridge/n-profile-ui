@@ -14,6 +14,7 @@ $two-thirds-width: percentage(2 / 3);
 .consent-form {
 	@include oTypographySans;
 	color: oColorsByName('black-80');
+	margin-bottom: oSpacingByName('s6');
 	max-width: none;
 	padding-left: 0;
 	padding-right: 0;
