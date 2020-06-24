@@ -13,7 +13,7 @@
     "tests"
   ],
   "dependencies": {
-    "n-ui-foundations": "4.0.0-beta.2",
+    "n-ui-foundations": "^6.0.0",
     "o-banner": "^3.0.0",
     "o-buttons": "^6.0.2",
     "o-colors": "^5.0.0",
